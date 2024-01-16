@@ -65,4 +65,32 @@ li {
 aside {
   background-color: #f7f7f7;
   border: #1098ad 5px solid;
+  margin-right: 320px;
+  margin-left: 20px;
+}
+li:first-child {
+  color: #1098ad;
+}
+li:last-child {
+  color: #1098ad;
+}
+li:nth-child(2) {
+  color: #6410ad;
+}
+/* stylying hyperlink */
+a:link {
+  /* we only want to target those element that have href  */
+  color: #1098ad;
+  text-decoration: none; /* remove the underline */
+}
+a:visited {
+  color: #777;
+}
+a:hover {
+  color: #6410ad;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+a:active {
+  background-color: #000000;
 }
