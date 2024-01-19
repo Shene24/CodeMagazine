@@ -1,11 +1,28 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: sans-serif;
   color: #444;
+}
+.post-header {
+  margin-bottom: 40px;
+}
+article {
+  margin-bottom: 60px;
+}
+aside {
+  background-color: #f7f7f7;
+  border: #1098ad 5px solid;
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
+  padding: 50px 0;
+}
+nav {
+  font-size: 18px;
 }
 h1,
 h2,
@@ -21,9 +38,11 @@ h1 {
 }
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
 }
 h4 {
   font-size: 20px;
@@ -33,11 +52,18 @@ h4 {
 }
 p {
   font-size: 22px;
+  margin-bottom: 50px;
 
   line-height: 1.5; /*space between the lines  */
 }
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
 li {
   font-size: 20px;
+  margin-bottom: 10px;
 }
 /*footer p {
   descendent selector is p which is called the child for the parentElement (ancentor)  
@@ -61,18 +87,16 @@ li {
 }
 .main-header {
   background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
 }
-aside {
-  background-color: #f7f7f7;
-  border: #1098ad 5px solid;
-  margin-right: 320px;
-  margin-left: 20px;
-}
+
 li:first-child {
   color: #1098ad;
 }
 li:last-child {
   color: #1098ad;
+  margin-bottom: 0;
 }
 li:nth-child(2) {
   color: #6410ad;
@@ -94,3 +118,11 @@ a:hover {
 a:active {
   background-color: #000000;
 }
+.main-header :hover {
+  background-color: #000000;
+}
+/* how to make the li square */
+li {
+  list-style-type: square;
+}
+/* i have an element which is a button and i want to change the color when i hover over it */
