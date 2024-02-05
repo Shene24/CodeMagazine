@@ -40,10 +40,22 @@
         margin: 40px;
 
         /* CSS GRID */
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        /* grid-template-rows: 1fr, 1fr; */
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 20px;
+        row-gap: 40px;
+      }
+      .el--2 {
+        grid-column: 1/2;
+        grid-row: 2/3;
       }
 
       .container--2 {
         /* STARTER */
+
         font-family: sans-serif;
         background-color: black;
         font-size: 40px;
@@ -53,6 +65,7 @@
         height: 600px;
 
         /* CSS GRID */
+        display: none;
       }
     </style>
   </head>

@@ -17,9 +17,12 @@
           <a href="css-grid.html"">CSS Grid</a>
         </nav>
       </header>
+      <!-- only nessesary for flexbox -->
+      <!-- <div class="row"> -->
       <article>
         <header class="post-header">
           <h2>The Basic Language of the Web: HTML</h2>
+          <div class="author-box">
           <img
             src="img/laura-jones.jpg"
             alt="pic of the auther"
@@ -29,6 +32,7 @@
           <p id="author">
             Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
           </p>
+          </div>
           <img
             src="img/post-img.jpg"
             alt="code written on the screen "
@@ -37,6 +41,7 @@
             class="post-img"
           />
         </header>
+        
         <p>
           All modern websites and web applications are built using three
           <em>fundamental</em>
@@ -95,38 +100,47 @@
       <aside>
         <h4>Related posts</h4>
         <ul class="bullet-points">
-          <li>
+          
+          <li class="related-post">
             <img
               src="img/related-1.jpg"
               alt="a guy is coding"
               width="75"
               height="75"
             />
-            <a href="#">How to become a web developer</a>
+            <div>
+            <a href="#" class="related-link">How to become a web developer & UX designer </a>
             <p class="related-author">By John Adam</p>
+          </div>
           </li>
-          <li>
+        
+          <li class="related-post">
             <img
               src="img/related-2.jpg"
               alt="a guy is coding"
               width="75"
               height="75"
             />
-            <a href="#">How to become a web developer</a>
+            <div>
+            <a href="#" class="related-link">How to become a web developer</a>
             <p class="related-author">By John Adam</p>
+          </div>
           </li>
-          <li>
+          <li class="related-post" >
             <img
               src="img/related-3.jpg"
               alt="a guy is coding"
               width="75"
               height="75"
             />
-            <a href="#">How to become a web developer</a>
+            <div>
+            <a href="#" class="related-link">How to become a web developer</a>
             <p class="related-author">By John Adam</p>
+          </div>
           </li>
         </ul>
       </aside>
+    <!-- </div> -->
       <footer>
         <p id="copyright">Copyright &copy;2027 by The Code Magazine</p>
       </footer>
